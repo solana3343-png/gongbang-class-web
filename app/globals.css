@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+/* PRD 3.0 공통 — 색 역할 */
+:root {
+  --bg: #fbfcfd;
+  --card: #ffffff;
+  --text: #171d23;
+  --line: #e7ecf1;
+  --accent: #3e6e96;
+  --wait-fg: #9a6a12;
+  --wait-bg: #fff5dd;
+  --stop-fg: #b4432b;
+  --stop-bg: #fbe9e5;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-card: var(--card);
+  --color-ink: var(--text);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-wait-fg: var(--wait-fg);
+  --color-wait-bg: var(--wait-bg);
+  --color-stop-fg: var(--stop-fg);
+  --color-stop-bg: var(--stop-bg);
+  --font-sans: var(--font-noto-kr), system-ui, sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-size: 15px;
+}
